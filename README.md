@@ -1,23 +1,33 @@
-# DB_Tutorias
-# CONCEPTOS IMPORTANTES
+# *TutorHUB:* Sistema integral para la gestión de asesorias académicas.
+## *INTEGRANTES: *
+Alex Duvan Lopez Solano - 2242040
+Karoll Nataly Sánchez Ortega - 2250169
+Dayron Stiven Galeano Mejía - 2250153
+Brandon Andrés Jaimes Romero - 2250156
 
-## Tutor
+# *1. CONTEXTO DEL PROBLEMA:*
+
+# *2. CONCEPTOS Y TENDENCIAS ACTUALES:*
+
+## Conceptos Importantes
+
+### Tutor
 
 Un tutor es la persona encargada de orientar y apoyar el proceso de aprendizaje de uno o varios estudiantes en un área específica del conocimiento. En el contexto universitario, el tutor brinda acompañamiento académico, resuelve dudas, fortalece competencias y contribuye al desarrollo de habilidades que permitan al estudiante mejorar su desempeño.
 
-## Estudiante
+### Estudiante
 
 Un estudiante es la persona matriculada en una institución educativa que participa en un proceso de formación con el propósito de adquirir conocimientos, desarrollar competencias y alcanzar los objetivos académicos establecidos por su programa de estudios. En un sistema de tutorías, el estudiante es quien solicita y recibe el acompañamiento académico.
 
-## Tutoría individual
+### Tutoría individual
 
 La tutoría individual es una modalidad de acompañamiento académico en la que un tutor atiende a un solo estudiante durante una sesión. Este tipo de tutoría permite brindar una atención personalizada, resolver dudas específicas y adaptar la explicación a las necesidades y ritmo de aprendizaje del estudiante.
 
-## Tutoría grupal
+### Tutoría grupal
 
 La tutoría grupal es una modalidad de acompañamiento académico en la que un tutor orienta simultáneamente a varios estudiantes. Generalmente se utiliza cuando los participantes presentan necesidades de aprendizaje similares o requieren reforzar un mismo tema, favoreciendo además el intercambio de ideas y el aprendizaje colaborativo.
 
-## Reserva o agendamiento de citas
+### Reserva o agendamiento de citas
 
 La reserva o agendamiento de citas es el proceso mediante el cual un usuario selecciona y confirma una fecha, una hora y, en algunos casos, un lugar para recibir un servicio. En un sistema de tutorías universitarias, este proceso permite a los estudiantes programar sesiones con un tutor según la disponibilidad de horarios, evitando conflictos y facilitando la organización de las tutorías.
 
@@ -25,7 +35,7 @@ La reserva o agendamiento de citas es el proceso mediante el cual un usuario sel
 
 Los conceptos de tutor, estudiante, tutoría individual, tutoría grupal y reserva de citas constituyen la base de un sistema de gestión de tutorías universitarias, ya que representan los principales actores y procesos involucrados en el servicio. Comprender su función permite identificar la información que debe almacenarse en la base de datos, definir las relaciones entre las entidades y garantizar una adecuada organización de las tutorías. Además, estos conceptos facilitan el diseño de un sistema que optimice la programación de sesiones, mejore el aprovechamiento de los horarios disponibles y contribuya a brindar un acompañamiento académico eficiente tanto para los tutores como para los estudiantes.
 
-## Otros conceptos
+### Otros conceptos:
 
 ### Tutoría virtual
 
@@ -51,7 +61,7 @@ Por ejemplo, en Ingeniería de Sistemas pueden ofrecerse tutorías de Programaci
 
 ---
 
-# TENDENCIAS ACTUALES EN LOS CONCEPTOS
+## Tendencias actuales en el área.
 
 Los sistemas de gestión de tutorías han evolucionado para facilitar la organización del acompañamiento académico y responder a las necesidades de estudiantes y docentes. Actualmente, una de las principales tendencias es la reserva de tutorías en línea, ya que permite programar citas desde un computador o dispositivo móvil, consultar horarios disponibles en tiempo real y realizar modificaciones sin necesidad de procesos presenciales.
 
@@ -67,7 +77,7 @@ Finalmente, la integración con el sistema académico de la universidad permite 
 
 La implementación de estas tendencias mejora la eficiencia del servicio, optimiza la administración de las tutorías y ofrece una mejor experiencia a estudiantes y tutores. En contraste, la ausencia de estas funcionalidades puede generar conflictos de horarios, mayor carga administrativa, incremento de inasistencias y dificultades para gestionar la información de manera organizada.
 
-# HERRAMIENTAS EN EL MERCADO
+# 3. HERRAMIENTAS EN EL MERCADO:
 
 ## Q10 (Software Académico Integral)
 Q10 es un sistema de información estudiantil en la nube ampliamente adoptado por instituciones de educación superior y técnica en Colombia. A diferencia de un aplicativo de reserva aislado, Q10 funciona como una plataforma que integra la gestión académica, administrativa y el aprendizaje virtual (LMS). En el ámbito de las tutorías, esta arquitectura modular permite vincular el acompañamiento pedagógico directamente con el historial del usuario, garantizando que el servicio de tutoría no sea un evento desconectado, sino parte del seguimiento académico.
