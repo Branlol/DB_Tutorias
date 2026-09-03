@@ -1,13 +1,13 @@
 # *TutorHUB:* Sistema integral para la gestión de asesorias académicas.
-## INTEGRANTES: 
+## Integrantes:
 Alex Duvan Lopez Solano - 2242040\
 Karoll Nataly Sánchez Ortega - 2250169\
 Dayron Stiven Galeano Mejía - 2250153\
 Brandon Andrés Jaimes Romero - 2250156
 
-# *1. CONTEXTO DEL PROBLEMA:*
+# *1. Contexto del Problema*
 
-# *2. CONCEPTOS Y TENDENCIAS ACTUALES:*
+# *2. Conceptos y Tendencias Actuales*
 
 ## Conceptos Importantes
 
@@ -77,7 +77,7 @@ Finalmente, la integración con el sistema académico de la universidad permite 
 
 La implementación de estas tendencias mejora la eficiencia del servicio, optimiza la administración de las tutorías y ofrece una mejor experiencia a estudiantes y tutores. En contraste, la ausencia de estas funcionalidades puede generar conflictos de horarios, mayor carga administrativa, incremento de inasistencias y dificultades para gestionar la información de manera organizada.
 
-# 3. HERRAMIENTAS EN EL MERCADO:
+# 3. Herramientas en el Mercado
 
 ## Q10 (Software Académico Integral)
 Q10 es un sistema de información estudiantil en la nube ampliamente adoptado por instituciones de educación superior y técnica en Colombia. A diferencia de un aplicativo de reserva aislado, Q10 funciona como una plataforma que integra la gestión académica, administrativa y el aprendizaje virtual (LMS). En el ámbito de las tutorías, esta arquitectura modular permite vincular el acompañamiento pedagógico directamente con el historial del usuario, garantizando que el servicio de tutoría no sea un evento desconectado, sino parte del seguimiento académico.
