@@ -1,11 +1,19 @@
 # *TutorHUB:* Sistema integral para la gestión de asesorias académicas.
 ## Integrantes:
 Alex Duvan Lopez Solano - 2242040\
-Karoll Nataly Sánchez Ortega - 2250169\
 Dayron Stiven Galeano Mejía - 2250153\
-Brandon Andrés Jaimes Romero - 2250156
+Brandon Andrés Jaimes Romero - 2250156\
+Karoll Nataly Sánchez Ortega - 2250169
 
 # *1. Contexto del Problema*
+
+Una universidad quiere implementar un sistema que permita gestionar la reserva de tutorías para sus estudiantes, contemplando tanto tutorías individuales como grupales, así como la información de los tutores, sus horarios y los lugares donde estas se llevan a cabo.
+
+Tanto estudiantes como tutores son personas de las cuales se conoce su correo, un código institucional único, su nombre y su teléfono. De cada estudiante, además, se conoce el programa académico al que pertenece y el semestre que cursa. De cada tutor se conoce la escuela a la que está adscrito y su estado (activo o inactivo).
+
+Las tutorías están asociadas a una asignatura, de la cual se conoce su nombre y un código único que la identifica; una asignatura puede tener asociadas muchas tutorías, o ninguna todavía. Cada tutoría es dictada por un tutor, y un mismo tutor puede dictar varias tutorías a lo largo del tiempo. De cada tutoría se registra un código, el tipo (individual o grupal), una descripción, la cantidad máxima de estudiantes que pueden inscribirse, su estado (por ejemplo programada, realizada o cancelada) y observaciones adicionales. Toda tutoría debe tener programada una sesión, de la que se conoce la fecha, la hora de inicio, la hora de finalización y la modalidad en que se realizará (presencial o virtual).
+
+Los estudiantes pueden inscribirse a distintas tutorías, y una tutoría puede contar con la participación de uno o varios estudiantes, dependiendo de si es individual o grupal; toda tutoría debe tener al menos un estudiante inscrito. Cuando la modalidad es presencial, la tutoría se lleva a cabo en un lugar específico dentro de la universidad, del cual se conoce el edificio, el aula (que lo identifica) y su capacidad.
 
 # *2. Conceptos y Tendencias Actuales*
 
