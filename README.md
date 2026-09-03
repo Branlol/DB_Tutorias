@@ -1,9 +1,9 @@
 # *TutorHUB:* Sistema integral para la gestión de asesorias académicas.
 ## *INTEGRANTES: *
-Alex Duvan Lopez Solano - 2242040
-Karoll Nataly Sánchez Ortega - 2250169
-Dayron Stiven Galeano Mejía - 2250153
-Brandon Andrés Jaimes Romero - 2250156
+Alex Duvan Lopez Solano - 2242040\
+Karoll Nataly Sánchez Ortega - 2250169\
+Dayron Stiven Galeano Mejía - 2250153\
+Brandon Andrés Jaimes Romero - 2250156\
 
 # *1. CONTEXTO DEL PROBLEMA:*
 
