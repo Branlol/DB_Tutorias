@@ -13,7 +13,7 @@ Tanto estudiantes como tutores son personas de las cuales se conoce su correo, u
 
 Las tutorías están asociadas a una asignatura, de la cual se conoce su nombre y un código único que la identifica; una asignatura puede tener asociadas muchas tutorías, o ninguna todavía. Cada tutoría es dictada por un tutor, y un mismo tutor puede dictar varias tutorías a lo largo del tiempo. De cada tutoría se registra un código, el tipo (individual o grupal), una descripción, la cantidad máxima de estudiantes que pueden inscribirse, su estado (por ejemplo programada, realizada o cancelada) y observaciones adicionales. Toda tutoría debe tener programada una sesión, de la que se conoce la fecha, la hora de inicio, la hora de finalización y la modalidad en que se realizará (presencial o virtual).
 
-Los estudiantes pueden inscribirse a distintas tutorías, y una tutoría puede contar con la participación de uno o varios estudiantes, dependiendo de si es individual o grupal; toda tutoría debe tener al menos un estudiante inscrito. Cuando la modalidad es presencial, la tutoría se lleva a cabo en un lugar específico dentro de la universidad, del cual se conoce el edificio, el aula (que lo identifica) y su capacidad.
+Los estudiantes pueden inscribirse a distintas tutorías, y una tutoría puede contar con la participación de uno o varios estudiantes, dependiendo de si es individual o grupal; toda tutoría debe tener al menos un estudiante inscrito. Cuando la modalidad es presencial, la tutoría se lleva a cabo en un lugar específico dentro de la universidad, del cual se conoce el edificio, el aula (que lo identifica) y su capacidad. Cuando la modalidad es virtual, la tutoría no requiere un lugar presencial.
 
 # *2. Conceptos y Tendencias Actuales*
 
