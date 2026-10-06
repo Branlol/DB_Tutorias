@@ -1,0 +1,754 @@
+{
+  "diagramType": 2,
+  "data": {
+    "nodes": [
+      {
+        "id": "95c63796-76e9-485b-8290-6347a5ec92b1",
+        "type": "Table",
+        "position": {
+          "x": 617,
+          "y": -78
+        },
+        "data": {
+          "label": "Persona",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "86b0362c-c56f-46d5-b260-b2438d6ddf60",
+              "name": "Código",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "isUnique": false
+            },
+            {
+              "id": "4520fe95-c66b-404d-8819-f251b5211ab2",
+              "name": "Correo",
+              "type": "VARCHAR(n)",
+              "position": 1,
+              "isPrimaryKey": false,
+              "isUnique": true,
+              "size": "80"
+            },
+            {
+              "id": "b0b74551-716b-44c8-b97c-8a5b3078340f",
+              "name": "Nombre",
+              "type": "VARCHAR(n)",
+              "position": 2,
+              "isPrimaryKey": false,
+              "isUnique": false,
+              "size": "80"
+            },
+            {
+              "id": "83535c06-8c67-4f61-9387-8f8b023df8fd",
+              "name": "Apellido",
+              "type": "VARCHAR(n)",
+              "position": 3,
+              "size": "80"
+            },
+            {
+              "id": "bfb53eaa-021c-4ff9-b9c9-50e3f01c6462",
+              "name": "Teléfono",
+              "type": "INT",
+              "position": 4,
+              "isPrimaryKey": false,
+              "isUnique": true
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 149
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "ddcf55fb-81a8-4207-83c7-383554fbc5ea",
+        "type": "Table",
+        "position": {
+          "x": 312.7219683569084,
+          "y": 75.47768032646893
+        },
+        "data": {
+          "label": "Estudiante",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "1e3dda34-a061-4a2b-b0e3-d83ab3c9ede7",
+              "name": "Programa_académico",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "80"
+            },
+            {
+              "id": "9a0f65ca-8d4d-416a-9d80-37af551bfa10",
+              "name": "Semestre",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            },
+            {
+              "id": "fk_ffaa623c-343b-43ad-b612-b9e297e681e9",
+              "name": "fk_Persona",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "d635222c-ba28-4333-aa64-a92516a89c7f",
+                "sourceTableId": "95c63796-76e9-485b-8290-6347a5ec92b1",
+                "columns": [
+                  {
+                    "id": "fk_86b0362c-c56f-46d5-b260-b2438d6ddf60",
+                    "name": "Código_estudiante",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 100
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "f61e7c7e-6859-4109-9cef-f3fbbb00aaab",
+        "type": "Table",
+        "position": {
+          "x": 920.2079525353628,
+          "y": 89.51915659415026
+        },
+        "data": {
+          "label": "Tutor",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "2a0c54d7-7d8f-4337-a167-c2eeb3608f87",
+              "name": "Escuela",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "80"
+            },
+            {
+              "id": "541c7bea-a98e-452a-9484-7f93758f88e9",
+              "name": "Estado",
+              "type": "Custom",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "boolean"
+            },
+            {
+              "id": "fk_fb45bf6e-e154-4f01-b968-14c0422138e6",
+              "name": "fk_Persona",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "3bb2239d-f296-4069-ac28-5d900f54871b",
+                "sourceTableId": "95c63796-76e9-485b-8290-6347a5ec92b1",
+                "columns": [
+                  {
+                    "id": "fk_86b0362c-c56f-46d5-b260-b2438d6ddf60",
+                    "name": "Código_tutor",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": true
+        },
+        "measured": {
+          "width": 240,
+          "height": 100
+        },
+        "selected": true,
+        "dragging": false
+      },
+      {
+        "id": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+        "type": "Table",
+        "position": {
+          "x": 618.0197126196898,
+          "y": 418.49600394682057
+        },
+        "data": {
+          "label": "Tutoria",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "bead5180-f8d9-4fff-a64c-1beaf92f0a2b",
+              "name": "Código_tutoría",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "4a942390-4f43-4664-9ab5-036ed0cb347e",
+              "name": "Tipo",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "80",
+              "isOptional": false
+            },
+            {
+              "id": "8cbb688c-d168-40d7-9e64-b1e0bed5fe64",
+              "name": "Descripción",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "200",
+              "isOptional": false
+            },
+            {
+              "id": "cecb85b5-026f-4891-9485-0bcabe7bd87e",
+              "name": "Cantidad_máxima_de_estudiantes",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false
+            },
+            {
+              "id": "2a40e9d4-7be3-4556-bd71-9fafb14f0461",
+              "name": "Fecha",
+              "type": "DATE",
+              "position": 0,
+              "isPrimaryKey": false,
+              "isOptional": false,
+              "groupNumbers": [
+                1
+              ]
+            },
+            {
+              "id": "bd8b0065-f663-4e4a-9f11-032cc1e48088",
+              "name": "Hora_de_inicio",
+              "type": "Custom",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "time",
+              "isOptional": false,
+              "groupNumbers": [
+                1
+              ]
+            },
+            {
+              "id": "b9688c4b-e78d-4852-80bb-a70f41acbbbd",
+              "name": "Hora_de_finalización",
+              "type": "Custom",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "time",
+              "isOptional": false
+            },
+            {
+              "id": "f943442e-d3ef-4600-ba7e-1bdbe37e1f8d",
+              "name": "Modalidad",
+              "type": "Custom",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "boolean",
+              "isOptional": false
+            },
+            {
+              "id": "b6645f6c-a71d-444c-bea9-bcaecb860a93",
+              "name": "Observaciones",
+              "type": "Custom",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "text",
+              "isOptional": false
+            },
+            {
+              "id": "fk_a67ea40f-57f6-4437-9329-b91e1a7c4423",
+              "name": "fk_Asignatura",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "333f8aae-8ffa-456e-b17f-58a70bd07e9d",
+                "sourceTableId": "994f438e-7117-4ba4-9730-e945298715cd",
+                "columns": [
+                  {
+                    "id": "fk_922eebd4-bab5-4dd5-b854-f3e2520ffce8",
+                    "name": "Código_asignatura",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false
+            },
+            {
+              "id": "fk_72e2334d-d43a-4d62-8ccd-033c92d3ea8f",
+              "name": "fk_Lugar",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "979f9a92-cb15-4b52-8ee4-dd1e597f4bf1",
+                "sourceTableId": "5fb07c75-efff-4827-a4f7-c3f506d0aa2a",
+                "columns": [
+                  {
+                    "id": "fk_1cf379ec-0524-406b-9f12-15dc89bd90f0",
+                    "name": "Edificio",
+                    "type": "VARCHAR(n)",
+                    "size": "80"
+                  },
+                  {
+                    "id": "fk_6c77be7f-a05b-4f80-8e53-bf3fb0529c06",
+                    "name": "Aula",
+                    "type": "VARCHAR(n)",
+                    "size": "10"
+                  }
+                ]
+              },
+              "isOptional": true
+            },
+            {
+              "id": "fk_83d81e9a-0b42-4adc-aa0c-aaa3995625d7",
+              "name": "fk_Tutor",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "d5a11853-103d-4346-8607-d2c50b221c83",
+                "sourceTableId": "f61e7c7e-6859-4109-9cef-f3fbbb00aaab",
+                "columns": [
+                  {
+                    "id": "fk_fk_86b0362c-c56f-46d5-b260-b2438d6ddf60",
+                    "name": "Código_tutor",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isOptional": false,
+              "groupNumbers": [
+                1
+              ]
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 252,
+          "height": 354
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "994f438e-7117-4ba4-9730-e945298715cd",
+        "type": "Table",
+        "position": {
+          "x": 172.5852373231868,
+          "y": 656.4239018281098
+        },
+        "data": {
+          "label": "Asignatura",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "c7a074eb-0735-48eb-881a-7cb287ffbc54",
+              "name": "Nombre",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "80"
+            },
+            {
+              "id": "922eebd4-bab5-4dd5-b854-f3e2520ffce8",
+              "name": "Código_asignatura",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 75
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "5fb07c75-efff-4827-a4f7-c3f506d0aa2a",
+        "type": "Table",
+        "position": {
+          "x": 1234.2934969531502,
+          "y": 675.5268892491795
+        },
+        "data": {
+          "label": "Lugar",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "1cf379ec-0524-406b-9f12-15dc89bd90f0",
+              "name": "Edificio",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "size": "80"
+            },
+            {
+              "id": "6c77be7f-a05b-4f80-8e53-bf3fb0529c06",
+              "name": "Aula",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "size": "10"
+            },
+            {
+              "id": "feb0222c-a1fb-4bc8-af5b-81d9f43a52f8",
+              "name": "Capacidad",
+              "type": "INT",
+              "position": 0,
+              "isPrimaryKey": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 99
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "982e7bd8-72d1-4ec3-8611-355df3f10a8d",
+        "type": "Table",
+        "position": {
+          "x": 315,
+          "y": 245
+        },
+        "data": {
+          "label": "Estudiante_Tutoria",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "fk_66a77e0b-2e0d-49ed-b96f-013c52da6b22",
+              "name": "fk_Estudiante",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "6192d4d7-554e-40a0-a439-5fa4f7e03377",
+                "sourceTableId": "ddcf55fb-81a8-4207-83c7-383554fbc5ea",
+                "columns": [
+                  {
+                    "id": "fk_fk_86b0362c-c56f-46d5-b260-b2438d6ddf60",
+                    "name": "Código_estudiante",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            },
+            {
+              "id": "fk_e6b3c227-20cc-489b-9e31-91ba8795e51c",
+              "name": "fk_Tutoria",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "cb21d44b-73bf-47b6-9434-667806bd6788",
+                "sourceTableId": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+                "columns": [
+                  {
+                    "id": "fk_bead5180-f8d9-4fff-a64c-1beaf92f0a2b",
+                    "name": "Código_tutoría",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 76
+        },
+        "selected": false,
+        "dragging": false
+      },
+      {
+        "id": "bc027aae-af7e-4ffd-b50f-7d16109309fd",
+        "type": "Table",
+        "position": {
+          "x": 991,
+          "y": 817
+        },
+        "data": {
+          "label": "Tutoria_estado",
+          "isConnectable": false,
+          "columns": [
+            {
+              "id": "d39a7c75-1340-4d2f-9efc-823f3a49c7b7",
+              "name": "Fecha_desde",
+              "type": "Custom",
+              "position": 0,
+              "isPrimaryKey": true,
+              "isOptional": false,
+              "size": "TIMESTAMP"
+            },
+            {
+              "id": "0b0b6ad8-cdf8-4087-a12a-389961de3c81",
+              "name": "Estado",
+              "type": "VARCHAR(n)",
+              "position": 0,
+              "isPrimaryKey": false,
+              "size": "15"
+            },
+            {
+              "id": "fk_2f0951b1-187e-4918-bb25-6ce880d5518c",
+              "name": "fk_Tutoria",
+              "type": "None",
+              "isForeignKey": true,
+              "foreignKeyProps": {
+                "foreignKeyGroupId": "fd728e90-772b-435b-acde-a0d7adc2d7ed",
+                "sourceTableId": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+                "columns": [
+                  {
+                    "id": "fk_bead5180-f8d9-4fff-a64c-1beaf92f0a2b",
+                    "name": "Código_tutoría",
+                    "type": "INT"
+                  }
+                ]
+              },
+              "isPrimaryKey": true,
+              "isOptional": false
+            }
+          ],
+          "isSelected": false
+        },
+        "measured": {
+          "width": 240,
+          "height": 100
+        },
+        "selected": false,
+        "dragging": false
+      }
+    ],
+    "edges": [
+      {
+        "id": "95c63796-76e9-485b-8290-6347a5ec92b1->ddcf55fb-81a8-4207-83c7-383554fbc5ea_d635222c-ba28-4333-aa64-a92516a89c7f",
+        "type": "Relational",
+        "source": "95c63796-76e9-485b-8290-6347a5ec92b1",
+        "targetHandle": "foreign-key-handle-d635222c-ba28-4333-aa64-a92516a89c7f",
+        "target": "ddcf55fb-81a8-4207-83c7-383554fbc5ea",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "d635222c-ba28-4333-aa64-a92516a89c7f",
+            "sourceTableId": "95c63796-76e9-485b-8290-6347a5ec92b1",
+            "columns": [
+              {
+                "id": "fk_86b0362c-c56f-46d5-b260-b2438d6ddf60",
+                "name": "Código",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "95c63796-76e9-485b-8290-6347a5ec92b1->f61e7c7e-6859-4109-9cef-f3fbbb00aaab_3bb2239d-f296-4069-ac28-5d900f54871b",
+        "type": "Relational",
+        "source": "95c63796-76e9-485b-8290-6347a5ec92b1",
+        "targetHandle": "foreign-key-handle-3bb2239d-f296-4069-ac28-5d900f54871b",
+        "target": "f61e7c7e-6859-4109-9cef-f3fbbb00aaab",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "3bb2239d-f296-4069-ac28-5d900f54871b",
+            "sourceTableId": "95c63796-76e9-485b-8290-6347a5ec92b1",
+            "columns": [
+              {
+                "id": "fk_86b0362c-c56f-46d5-b260-b2438d6ddf60",
+                "name": "Código",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "ddcf55fb-81a8-4207-83c7-383554fbc5ea->982e7bd8-72d1-4ec3-8611-355df3f10a8d_6192d4d7-554e-40a0-a439-5fa4f7e03377",
+        "type": "Relational",
+        "source": "ddcf55fb-81a8-4207-83c7-383554fbc5ea",
+        "targetHandle": "foreign-key-handle-6192d4d7-554e-40a0-a439-5fa4f7e03377",
+        "target": "982e7bd8-72d1-4ec3-8611-355df3f10a8d",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "6192d4d7-554e-40a0-a439-5fa4f7e03377",
+            "sourceTableId": "ddcf55fb-81a8-4207-83c7-383554fbc5ea",
+            "columns": [
+              {
+                "id": "fk_fk_86b0362c-c56f-46d5-b260-b2438d6ddf60",
+                "name": "Código_estudiante",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "2bcb0a05-1512-45e3-b454-11f56dc5d421->982e7bd8-72d1-4ec3-8611-355df3f10a8d_cb21d44b-73bf-47b6-9434-667806bd6788",
+        "type": "Relational",
+        "source": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+        "targetHandle": "foreign-key-handle-cb21d44b-73bf-47b6-9434-667806bd6788",
+        "target": "982e7bd8-72d1-4ec3-8611-355df3f10a8d",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "cb21d44b-73bf-47b6-9434-667806bd6788",
+            "sourceTableId": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+            "columns": [
+              {
+                "id": "fk_bead5180-f8d9-4fff-a64c-1beaf92f0a2b",
+                "name": "Código_tutoría",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "994f438e-7117-4ba4-9730-e945298715cd->2bcb0a05-1512-45e3-b454-11f56dc5d421_333f8aae-8ffa-456e-b17f-58a70bd07e9d",
+        "type": "Relational",
+        "source": "994f438e-7117-4ba4-9730-e945298715cd",
+        "targetHandle": "foreign-key-handle-333f8aae-8ffa-456e-b17f-58a70bd07e9d",
+        "target": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "333f8aae-8ffa-456e-b17f-58a70bd07e9d",
+            "sourceTableId": "994f438e-7117-4ba4-9730-e945298715cd",
+            "columns": [
+              {
+                "id": "fk_922eebd4-bab5-4dd5-b854-f3e2520ffce8",
+                "name": "Código",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "5fb07c75-efff-4827-a4f7-c3f506d0aa2a->2bcb0a05-1512-45e3-b454-11f56dc5d421_979f9a92-cb15-4b52-8ee4-dd1e597f4bf1",
+        "type": "Relational",
+        "source": "5fb07c75-efff-4827-a4f7-c3f506d0aa2a",
+        "targetHandle": "foreign-key-handle-979f9a92-cb15-4b52-8ee4-dd1e597f4bf1",
+        "target": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "979f9a92-cb15-4b52-8ee4-dd1e597f4bf1",
+            "sourceTableId": "5fb07c75-efff-4827-a4f7-c3f506d0aa2a",
+            "columns": [
+              {
+                "id": "fk_1cf379ec-0524-406b-9f12-15dc89bd90f0",
+                "name": "Edificio",
+                "type": "INT"
+              },
+              {
+                "id": "fk_6c77be7f-a05b-4f80-8e53-bf3fb0529c06",
+                "name": "Aula",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "f61e7c7e-6859-4109-9cef-f3fbbb00aaab->2bcb0a05-1512-45e3-b454-11f56dc5d421_d5a11853-103d-4346-8607-d2c50b221c83",
+        "type": "Relational",
+        "source": "f61e7c7e-6859-4109-9cef-f3fbbb00aaab",
+        "targetHandle": "foreign-key-handle-d5a11853-103d-4346-8607-d2c50b221c83",
+        "target": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "d5a11853-103d-4346-8607-d2c50b221c83",
+            "sourceTableId": "f61e7c7e-6859-4109-9cef-f3fbbb00aaab",
+            "columns": [
+              {
+                "id": "fk_fk_86b0362c-c56f-46d5-b260-b2438d6ddf60",
+                "name": "Código_tutor",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "2bcb0a05-1512-45e3-b454-11f56dc5d421->bc027aae-af7e-4ffd-b50f-7d16109309fd_fd728e90-772b-435b-acde-a0d7adc2d7ed",
+        "type": "Relational",
+        "source": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+        "targetHandle": "foreign-key-handle-fd728e90-772b-435b-acde-a0d7adc2d7ed",
+        "target": "bc027aae-af7e-4ffd-b50f-7d16109309fd",
+        "markerStart": {
+          "type": "arrow"
+        },
+        "data": {
+          "foreignKeyProps": {
+            "foreignKeyGroupId": "fd728e90-772b-435b-acde-a0d7adc2d7ed",
+            "sourceTableId": "2bcb0a05-1512-45e3-b454-11f56dc5d421",
+            "columns": [
+              {
+                "id": "fk_bead5180-f8d9-4fff-a64c-1beaf92f0a2b",
+                "name": "Código_tutoría",
+                "type": "INT"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "viewport": {
+      "x": 242.26351325868427,
+      "y": 109.74480030757067,
+      "zoom": 0.5000000000000003
+    }
+  },
+  "name": "Tutoría",
+  "folder": {
+    "name": "Diagrams",
+    "folderType": 1,
+    "depth": 0,
+    "id": 451846
+  },
+  "id": 641075,
+  "updatedAtTimestamp": 1791171263
+}
