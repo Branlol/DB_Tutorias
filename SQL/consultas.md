@@ -28,6 +28,9 @@ JOIN persona p                 ON p.codigo            = t.codigo_tutor
 JOIN v_tutoria_estado_actual v ON v.codigo_tutoria    = t.codigo_tutoria
 ORDER BY t.fecha, t.hora_inicio;
 ```
+Casos de uso:
+- Se quiere consultar la programación completa de las tutorías.
+- Se necesita conocer el lugar, horario y tutor de cada sesión.
 El CONCAT es para concatenar y el COALESCE Pone el valor que sea != null
 ![Resultado 1](images/R1.png)
 ---
@@ -49,7 +52,9 @@ LEFT JOIN estudiante_tutoria et ON et.codigo_tutoria = t.codigo_tutoria
 GROUP BY t.codigo_tutoria, t.descripcion, t.cantidad_maxima_estudiantes
 ORDER BY porcentaje_ocupacion DESC, t.codigo_tutoria;
 ```
-
+Casos de uso:
+- Se quiere identificar las tutorías con menor ocupación para analizar por qué tienen poca demanda.
+- Se necesita detectar las tutorías que están próximas a llenarse.
 
 ![Resultado 2](images/R2.png)
 ## 3. Asignaturas más solicitadas
@@ -67,6 +72,9 @@ LEFT JOIN estudiante_tutoria et ON et.codigo_tutoria   = t.codigo_tutoria
 GROUP BY a.codigo_asignatura, a.nombre
 ORDER BY total_inscripciones DESC, a.nombre;
 ```
+Casos de uso:
+- Se quiere identificar las asignaturas con mayor demanda de tutorías.
+- Se necesita determinar qué materias requieren más tutores.
 
 ![Resultado 3](images/R3.png)
 ---
@@ -89,7 +97,9 @@ WHERE tu.estado = TRUE
 GROUP BY tu.codigo_tutor, p.nombre, p.apellido, tu.escuela
 ORDER BY tutorias_dictadas DESC, inscripciones_recibidas DESC;
 ```
-
+Casos de uso:
+- Se quiere identificar los tutores con mayor carga de trabajo para distribuir mejor las tutorías.
+- Se necesita conocer qué tutores tienen poca actividad.
 ![Resultado 4](images/R4.png)
 ---
 
@@ -113,7 +123,9 @@ JOIN v_tutoria_estado_actual v ON v.codigo_tutoria    = t.codigo_tutoria
 WHERE et.codigo_estudiante = 1001
 ORDER BY t.fecha, t.hora_inicio;
 ```
-
+Casos de uso:
+- Se quiere consultar las tutorías que ha recibido un estudiante.
+- Se necesita verificar si un estudiante ha participado en tutorías canceladas o realizadas.
 ![Resultado 5](images/R5.png)
 ---
 
@@ -136,7 +148,9 @@ WHERE t.modalidad = TRUE
 GROUP BY l.edificio, l.aula, l.capacidad, t.codigo_tutoria, t.fecha
 ORDER BY t.fecha;
 ```
-
+Casos de uso:
+- Se quiere identificar las aulas que tienen mayor disponibilidad de puestos.
+- Se necesita verificar que las inscripciones no superen la capacidad de las aulas.
 ![Resultado 6](images/R6.png)
 ---
 
@@ -158,6 +172,9 @@ JOIN persona pe            ON pe.codigo         = et.codigo_estudiante
 WHERE v.estado = 'cancelada'
 ORDER BY t.codigo_tutoria, pe.apellido;
 ```
+Casos de uso:
+- Se necesita notificar a los estudiantes cuando se cancela una tutoría.
+- Se quiere identificar cuántos estudiantes fueron afectados por las cancelaciones.
 
 ![Resultado 7](images/R7.png)
 ---
@@ -177,6 +194,9 @@ WHERE v.estado = 'realizada'
 GROUP BY es.programa_academico
 ORDER BY tutorias_recibidas DESC;
 ```
+Casos de uso:
+- Se quiere identificar los programas académicos que más utilizan el servicio de tutorías.
+- Se necesita analizar qué programas tienen menor participación para promover el servicio.
 el count(*) depende  del group by
 ![Resultado 8](images/R8.png)
 ---
@@ -205,7 +225,9 @@ GROUP BY t.codigo_tutoria, a.nombre, t.descripcion, t.fecha, t.hora_inicio,
 HAVING COUNT(et.codigo_estudiante) < t.cantidad_maxima_estudiantes
 ORDER BY t.fecha, t.hora_inicio;
 ```
-
+Casos de uso:
+- Se quiere mostrar a los estudiantes las tutorías en las que todavía pueden inscribirse.
+- Se necesita identificar las tutorías que aún tienen disponibilidad para recibir más estudiantes.
 ![Resultado 9](images/R9.png)
 ---
 
@@ -225,5 +247,8 @@ LEFT JOIN estudiante_tutoria et ON et.codigo_tutoria = t.codigo_tutoria
 GROUP BY t.modalidad, t.tipo
 ORDER BY t.modalidad, t.tipo;
 ```
+Casos de uso:
+- Se quiere identificar si tienen mayor demanda las tutorías presenciales o virtuales.
+- Se necesita comparar la cantidad promedio de estudiantes en tutorías individuales y grupales.
 
 ![Resultado 10](images/R10.png)
