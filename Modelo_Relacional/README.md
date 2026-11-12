@@ -18,7 +18,7 @@ El diagrama tiene **8 tablas**. Cada tabla muestra sus columnas, su llave primar
 
 ### Tablas
 
-| Tabla | Llave primaria | Descripción |
+| Tabla | Llave primaria | Otros atributos |
 |-------|----------------|-------------|
 | **Persona** | Código | Datos comunes: correo (único), nombre, apellido y teléfono (único) |
 | **Estudiante** | Código_estudiante (también FK a Persona) | Programa académico y semestre |
