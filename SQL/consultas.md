@@ -177,7 +177,7 @@ WHERE v.estado = 'realizada'
 GROUP BY es.programa_academico
 ORDER BY tutorias_recibidas DESC;
 ```
-
+el count(*) depende  del group by
 ![Resultado 8](images/R8.png)
 ---
 
