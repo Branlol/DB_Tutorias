@@ -33,9 +33,9 @@ El proyecto recorre el proceso completo de diseño de una base de datos: desde e
 
 | Entrega | Carpeta | Contenido | Guía de la carpeta |
 |---------|---------|-----------|--------------------|
-| **1** | [`Modelo_E-R`](./Modelo_E-R) | Diagrama entidad-relación y actividad exploratoria | [CONTEXTO.md](./Modelo_E-R/CONTEXTO.md) |
-| **2** | [`Modelo Relacional`](./Modelo%20Relacional) | Diagrama relacional de ERDPlus, archivo de ERDPlus e informe de normalización | [CONTEXTO.md](./Modelo%20Relacional/CONTEXTO.md) |
-| **3** | [`SQL`](./SQL) | Esquema, carga de datos y consultas | [CONTEXTO.md](./SQL/CONTEXTO.md) |
+| **1** | [`Modelo_E-R`](./Modelo_E-R) | Diagrama entidad-relación y actividad exploratoria | [README.md](./Modelo_E-R/README.md) |
+| **2** | [`Modelo Relacional`](./Modelo%20Relacional) | Diagrama relacional de ERDPlus, archivo de ERDPlus e informe de normalización | [README.md](./Modelo%20Relacional/README.md) |
+| **3** | [`SQL`](./SQL) | Esquema, carga de datos y consultas | [README.md](./SQL/README.md) |
 
 ### Primera entrega – `Modelo_E-R`
 Modelo conceptual del sistema: el diagrama entidad-relación y una actividad exploratoria con conceptos clave, tendencias y herramientas del mercado.
