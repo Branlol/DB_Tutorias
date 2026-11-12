@@ -7,7 +7,7 @@ Karoll Nataly Sánchez Ortega - 2250169
 
 # *1. Contexto del Problema*
 
-Una universidad quiere implementar un sistema que permita gestionar la reserva de tutorías para sus estudiantes, contemplando tanto tutorías individuales como grupales, así como la información de los tutores, sus horarios y los lugares donde estas se llevan a cabo.
+Una universidad quiere implementar un sistema que permita gestionar la reserva de tutorías para sus estudiantes, contemplando tanto tutorías individuales como grupales, así como la información de los tutores, horarios en los que se realizan las tutorías y los lugares donde estas se llevan a cabo.
 
 Tanto estudiantes como tutores son personas de las cuales se conoce su correo, un código institucional único, su nombre y su teléfono. De cada estudiante, además, se conoce el programa académico al que pertenece y el semestre que cursa. De cada tutor se conoce la escuela a la que está adscrito y su estado (activo o inactivo).
 
@@ -51,19 +51,15 @@ Modalidad en la que el acompañamiento se realiza mediante plataformas digitales
 
 ### Tutoría híbrida
 
-Combina sesiones presenciales y virtuales para aprovechar las ventajas de ambas modalidades.
+Pueden darse las tutorías de manera presencial o virtual.
 
 ### Retroalimentación (Feedback)
 
 Comentarios y recomendaciones que el tutor ofrece para mejorar el desempeño académico del estudiante.
 
-### Analítica del aprendizaje (Learning Analytics)
-
-Uso de datos sobre el desempeño de los estudiantes para identificar riesgos, personalizar el acompañamiento y mejorar las tutorías.
-
 ### Asignaturas para dar tutorías
 
-Las asignaturas para dar tutorías son las materias o cursos académicos sobre los cuales una institución educativa ofrece acompañamiento a los estudiantes con el fin de reforzar conocimientos, resolver dudas y mejorar el rendimiento académico. Estas asignaturas pueden pertenecer a cualquier programa académico y suelen seleccionarse en función de las necesidades de los estudiantes o de aquellas materias que presentan mayores índices de dificultad.
+Las asignaturas para dar tutorías son las materias o cursos académicos sobre los cuales una institución educativa ofrece acompañamiento a los estudiantes con el fin de reforzar conocimientos, resolver dudas y mejorar el rendimiento académico. Estas asignaturas pueden pertenecer a cualquier programa académico y suelen seleccionarse en función de las necesidades de los estudiantes.
 
 Por ejemplo, en Ingeniería de Sistemas pueden ofrecerse tutorías de Programación, Bases de Datos, Cálculo, Álgebra Lineal o Estructuras de Datos. En Medicina, es común encontrar tutorías de Anatomía, Fisiología, Bioquímica o Farmacología. En Administración de Empresas, pueden brindarse tutorías de Contabilidad, Finanzas, Economía o Estadística. De igual forma, existen asignaturas transversales como Inglés, Matemáticas, Física o Competencias Comunicativas, que pueden ser cursadas por estudiantes de diferentes carreras.
 
