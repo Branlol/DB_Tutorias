@@ -28,7 +28,7 @@ JOIN persona p                 ON p.codigo            = t.codigo_tutor
 JOIN v_tutoria_estado_actual v ON v.codigo_tutoria    = t.codigo_tutoria
 ORDER BY t.fecha, t.hora_inicio;
 ```
-
+El CONCAT es para concatenar y el COALESCE Pone el valor que sea != null
 ![Resultado 1](images/R1.png)
 ---
 
